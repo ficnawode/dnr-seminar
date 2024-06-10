@@ -1,23 +1,201 @@
 \input{./preamble.tex}
 
-\title{Presentation Template}
-    \subtitle{\textit{A latex template for presentations}}
+\title[STS]{Silicon Tracking System}
+    \subtitle{\textit{at the CBM experiment}}
 \author[T. Fic]{Tobiasz Fic}
 \institute[WUT]{Warsaw University of Technology}
-\date{8 December 2023}
+\date{4 June 2024}
 
 \begin{document}
 
 \setbeamertemplate{headline}{}
 \setbeamertemplate{footline}{}
+
+\setbeamertemplate{background}{\tikz[overlay,remember picture]\node[opacity=0.07]at (current page.center){\includegraphics[width=8cm]{images/logo-PW.png}};}
 \begin{frame}
     \maketitle
 \end{frame}
+\setbeamertemplate{background}{}
 
 \setbeamertemplate{headline}[pwtemplate]
 \setbeamertemplate{footline}[pwtemplate]
 
-\begin{columnframe}{Column slide}
+\begin{columnframe}{GSI and FAIR}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth, frame]{images/fair_sis100_diagram.jpg}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item one
+            \item two
+            \item three
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+
+\begin{columnframe}{The CBM Experiment}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth, frame]{images/galatyuk_map_of_experiments.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item one
+            \item two
+            \item three
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+
+\begin{columnframe}{The CBM experiment detector setup}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth, frame]{images/CBM_HADES_new_setup.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item one
+            \item two
+            \item three
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+
+\begin{columnframe}{Silicon Tracking System - goals}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\textwidth, frame]{images/sts_render.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item one
+            \item two
+            \item three
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+
+\begin{columnframe}{Silicon Tracking System - overview}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.9\textwidth, frame]{images/sts_integration_model.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item one
+            \item two
+            \item three
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+\begin{columnframe}{STS - Dimensions}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\textwidth, frame]{images/sts_dimensions.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item one
+            \item two
+            \item three
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+\begin{columnframe}{STS - silicon sensors}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\textwidth, frame]{images/sts_strips_1.png}
+            \includegraphics[width=0.6\textwidth, frame]{images/sts_strips_2.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item one
+            \item two
+            \item three
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+\begin{columnframe}{STS - calibration}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth, frame]{images/sts_strips.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item one
+            \item two
+            \item three
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+
+\begin{columnframe}{STS - reconstruction}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\textwidth, frame]{images/sts_reco.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item one
+            \item two
+            \item three
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+
+\begin{columnframe}{STS - expansion (MVD)}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\textwidth, frame]{images/mvd_render.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item one
+            \item two
+            \item three
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+
+\begin{columnframe}{STS - current state (mCBM)}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\textwidth, frame]{images/mCBM_render.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item one
+            \item two
+            \item three
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+
+
+\begin{columnframe}{Outlook}
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
@@ -32,6 +210,7 @@
         \end{itemize}
     \end{column}
 \end{columnframe}
+
 
 \setbeamertemplate{headline}{}
 \setbeamertemplate{footline}{}
