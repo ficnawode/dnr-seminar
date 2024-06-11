@@ -29,44 +29,37 @@
     \end{column}
     \begin{column}{0.5\textwidth}
         \begin{itemize}
-            \item one
-            \item two
-            \item three
+            \item The Facility for Antiproton and Ion Research (FAIR) is currently
+                  under construction at the GSI (Gesellschaft fur SchwerIonenforschung)
+                  Helmholtz Centre for Heavy Ion Research in Darmstadt, Germany
         \end{itemize}
     \end{column}
 \end{columnframe}
 
 \begin{columnframe}{The CBM Experiment}
     \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item The CBM experiment aims to study the properties of nuclear matter at high baryon densities
+            \item The energy range is between 2 and 5 GeV (beam momentum up to 12 AGeV/c)
+                  (SIS100 accelerator at FAIR)
+            \item The interaction rate is up to 10 MHz
+            \item The planned start date is 2027
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
             \includegraphics[width=\textwidth, frame]{images/galatyuk_map_of_experiments.png}
         \end{figure}
     \end{column}
-    \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item one
-            \item two
-            \item three
-        \end{itemize}
-    \end{column}
 \end{columnframe}
 
-\begin{columnframe}{The CBM experiment detector setup}
-    \begin{column}{0.5\textwidth}
-        \begin{figure}
-            \centering
-            \includegraphics[width=\textwidth, frame]{images/CBM_HADES_new_setup.png}
-        \end{figure}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item one
-            \item two
-            \item three
-        \end{itemize}
-    \end{column}
-\end{columnframe}
+\begin{frame}{The CBM experiment detector setup}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth, frame]{images/CBM_HADES_new_setup.png}
+    \end{figure}
+\end{frame}
 
 \begin{columnframe}{Silicon Tracking System - goals}
     \begin{column}{0.5\textwidth}
@@ -77,26 +70,28 @@
     \end{column}
     \begin{column}{0.5\textwidth}
         \begin{itemize}
-            \item one
-            \item two
-            \item three
+            \item STS is the main tracking system at CBM.
+            \item Measuring $dE/dx$ values at many stations
+            \item Locked in a large magnet, so tracks of charged particles are curved
         \end{itemize}
     \end{column}
 \end{columnframe}
 
 \begin{columnframe}{Silicon Tracking System - overview}
     \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item spatial resolution $\approx$ $25\mu m$
+            \item time-stamp resolution $\approx$ $5ns$
+            \item power dissipation: $~40kW$ ($CO_2$ cooling - sensors at $T\approx -5\si{\celsius}$)
+            \item momentum resolution: $dp/p \approx 1.8\%$ (at $p > 1 GeV/c$, 1 Tm uniform field)
+            \item self-triggering electronics
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
             \includegraphics[width=0.9\textwidth, frame]{images/sts_integration_model.png}
         \end{figure}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item one
-            \item two
-            \item three
-        \end{itemize}
     \end{column}
 \end{columnframe}
 \begin{columnframe}{STS - Dimensions}
@@ -108,41 +103,66 @@
     \end{column}
     \begin{column}{0.5\textwidth}
         \begin{itemize}
-            \item one
-            \item two
-            \item three
+            \item 1.4x2x1.1m
+            \item 8 tracking stations: volume $2m^3$, area $4m^2$
+            \item 896 double-sided micro-strip silicon sensors
         \end{itemize}
     \end{column}
 \end{columnframe}
+
+\begin{columnframe}{STS - the Magnet}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item Working gap is 1.4x2.5m
+            \item Weighs roughly 150 tons
+            \item Cooled with helium
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.8\textwidth, frame]{images/sts_magnet.png}
+        \end{figure}
+    \end{column}
+\end{columnframe}
+
 \begin{columnframe}{STS - silicon sensors}
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/sts_strips_1.png}
-            \includegraphics[width=0.6\textwidth, frame]{images/sts_strips_2.png}
+            \includegraphics[width=\textwidth, frame]{images/sts_silicon_sensor.png}
+            \includegraphics[width=\textwidth]{images/sts_strips.png}
         \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
         \begin{itemize}
-            \item one
-            \item two
-            \item three
+            \item Thin silicon strips pick up disturbances in the electric field
+                  caused by charged particles travelling through the detector
+            \item The signal from the strips is passed to the electronics via aluminum
+                  microcables (128 per sensor, 896 sensors in total)
+                  (in essence a voltage is probed)
+            \item What if a cable breaks?
         \end{itemize}
     \end{column}
 \end{columnframe}
 \begin{columnframe}{STS - calibration}
     \begin{column}{0.5\textwidth}
-        \begin{figure}
-            \centering
-            \includegraphics[width=\textwidth, frame]{images/sts_strips.png}
-        \end{figure}
+        \begin{itemize}
+            \item The response of each silicon sensor should be normalized.
+            \item In addition, the electronics must be calibrated both for
+                  gain (aplifiers) and time.
+            \item Noise performance is evaluated for the sensors and microcables
+                  separately.
+            \item At the interaction rate of 10 MHz, capacitance of cables and sensors
+                  starts to pose an issue.
+        \end{itemize}
     \end{column}
     \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item one
-            \item two
-            \item three
-        \end{itemize}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{images/sts_microstrip_silicon.png}
+            \includegraphics[width=\textwidth]{images/sts_calibration_plots.png}
+        \end{figure}
     \end{column}
 \end{columnframe}
 
@@ -150,47 +170,34 @@
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/sts_reco.png}
+            \includegraphics[width=0.9\textwidth, frame]{images/sts_reco.png}
         \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
         \begin{itemize}
-            \item one
-            \item two
-            \item three
-        \end{itemize}
-    \end{column}
-\end{columnframe}
-
-\begin{columnframe}{STS - expansion (MVD)}
-    \begin{column}{0.5\textwidth}
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/mvd_render.png}
-        \end{figure}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item one
-            \item two
-            \item three
+            \item The CBMRoot framework is used for the reconstruction
+            \item The software is written in C++, currently using data
+                  from GEANT4 simulations
+            \item The plan is to be able to do reconstruction in real-time (online) using FPGAs
+            \item The (simulated) tracking efficiency is $95\%$
         \end{itemize}
     \end{column}
 \end{columnframe}
 
 \begin{columnframe}{STS - current state (mCBM)}
     \begin{column}{0.5\textwidth}
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/mCBM_render.png}
-        \end{figure}
+        \begin{itemize}
+            \item Since SIS100 is not yet operational, the mCBM (miniCBM) experiment is being
+                  conducted at the SIS18 accelerator
+            \item The magnet has not yet been delivered (due to trading sanctions with Russia),
+                  so the STS tests are being conducted without momentum measurement
+        \end{itemize}
     \end{column}
     \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item one
-            \item two
-            \item three
-        \end{itemize}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.7\textwidth, frame]{images/mCBM_render.png}
+        \end{figure}
     \end{column}
 \end{columnframe}
 
@@ -199,18 +206,21 @@
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+            \includegraphics[width=0.7\textwidth, frame]{images/sis100_construction_site.jpg}
         \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
         \begin{itemize}
-            \item one
-            \item two
-            \item three
+            \item The STS detector is on track to be finished by the time SIS-100 is operational
+            \item The aforementioned tracking software is being tested on simulations
         \end{itemize}
     \end{column}
 \end{columnframe}
 
+\begin{frame}
+    \centering
+    \Large{Questions?}
+\end{frame}
 
 \setbeamertemplate{headline}{}
 \setbeamertemplate{footline}{}
